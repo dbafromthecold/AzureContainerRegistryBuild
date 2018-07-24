@@ -11,8 +11,6 @@ COPY TestDatabase_log.ldf /var/opt/sqlserver
 
 ENV ACCEPT_EULA=Y
 
-ENV MSSQL_TCP_PORT=15666
-
 
 HEALTHCHECK --interval=10s  \
 	CMD /opt/mssql/bin/sqlservr & \
